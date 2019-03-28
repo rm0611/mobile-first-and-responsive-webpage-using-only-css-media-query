@@ -1,0 +1,426 @@
+html {
+  /*background-image:
+  linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  linear-gradient(to right, #242526 0%, #fff 100%)*/
+  background-color: #1b2229;
+  color: white;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-size: 1.7em;
+  line-height: 2;
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #adadad;
+}
+
+.big {
+  font-size: 3.5em;
+  line-height: 1.1;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  padding-top: 30px;
+}
+
+.logo {
+  width: 100px;
+  padding-top: 20px;
+}
+
+.fullpage {
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 10px;
+  position: relative;
+}
+
+.scene {
+  margin: 0;
+  padding: 0;
+}
+
+.scene img {
+  display: block;
+  width: 100%;
+}
+
+
+/* Progress Bars */
+
+.skill {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 23px;
+}
+
+
+.skill_img {
+  margin: auto;
+  width: 14%;
+  float: left;
+}
+
+.skill_description {
+  width: 86%;
+  float: left;
+}
+
+.progressbar {
+  width: 100%;
+  height: 0.5em;
+  background-color: blue;
+  position: relative;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 8px;
+  width: 100%;
+  background-color: #3498db;
+  position: relative;
+  border-radius: 10px;
+}
+
+.percentCount {
+  float: right;
+  margin-top: 10px;
+  clear: both;
+  font-weight: bold;
+  font-family: Arial
+}
+
+.skill-set__bar {
+  width: 100%;
+  height: 1.4rem;
+  background: #fff;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+  box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+}
+
+.testing {
+  padding: 10px;
+  transition: .5s;
+  background-color: blue;
+}
+
+.testing.active {
+  background: red;
+  color: #fff;
+}
+
+.left-20 {
+  padding-left: 20px;
+}
+
+
+/* MOBILE: work area */
+
+@media all and (max-width: 600px) {
+
+  .logo {
+    padding-top: 40px;
+  }
+
+
+  main {
+    margin-bottom: 140px;
+  }
+
+  .work {
+    background-color: gray;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .work-medium {
+    display: none;
+  }
+
+  .your-class img {
+    background-color: black;
+    width: 100%;
+  }
+
+  .menu-item {
+    padding: 20px 0 15px 0;
+    background-color: black;
+    width: 33%;
+    text-align: center;
+  }
+
+  .menu-item-text {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  .selected {
+    color: blue;
+  }
+
+  .menu-middle {
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+  }
+
+  .about-container {
+    display: block;
+  }
+
+  .about-item-text {
+    margin-bottom: 20px;
+  }
+
+  .small-6 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .last {
+    margin-bottom: 150px;
+  }
+
+  /* MOBILE: footer menu */
+  .footer-container {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  .sticky-foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+  }
+
+
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav ul {
+  margin-top: 36px;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.left {
+  float: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/* Media Query - Medium screens like PC*/
+
+@media all and (min-width: 600px) {
+
+  header {
+    width: 100%;
+  }
+
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+  }
+
+  #header-container {
+    max-width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  header>#header-container>div#logo {
+    position: relative;
+  }
+
+  header>#header-container>div#logo>h1 {
+    font-size: 2em;
+    line-height: 1.8em;
+  }
+
+  header>div#header-container>h1 {
+    background-color: transparent;
+    padding-top: 0px;
+  }
+
+  header>div#header-container>nav {
+    background-color: transparent;
+    display: block;
+    padding-top: 0px;
+    flex: 1;
+  }
+
+  header>div#header-container>nav>ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  header nav>ul>li {
+    border-bottom: none;
+  }
+
+  header nav>ul>li>a {
+    padding: 0 0 0 3rem;
+  }
+
+  header nav>ul>li>a span.toggle {
+    display: none;
+  }
+
+  header nav>ul>li>a span.caret {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid rgba(0, 0, 0, .65);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-radius: 1px;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin: 0 0 0 .25rem;
+    transition: 250ms all ease;
+    width: 0;
+    vertical-align: middle;
+  }
+
+  header nav>ul>li:hover>a span.caret {
+    border-top-color: rgb(140, 193, 193);
+    transform: rotate(270deg);
+  }
+
+  header>nav>ul>li:hover>nav {
+    background-color: rgb(51, 51, 51);
+    border-radius: .25em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+    display: block;
+    line-height: 3em;
+    right: -50%;
+    width: 196px;
+  }
+
+  .footer-container {
+    display: none;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    display: none;
+    padding: 20px 0px;
+    background-color: black;
+  }
+
+  .work {
+    display: none;
+  }
+
+  .work-medium {
+    background-color: gray;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .your-class img {
+    background-color: black;
+    width: 100%;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
+  .about-item-text {
+    width: 60%;
+    /*margin-right: 20px;*/
+  }
+
+  .about-item-img {
+    width: 40%;
+  }
+
+  .small-6 {
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .column-left {
+    padding-right: 1em;
+  }
+
+  .column-right {
+    padding-left: 1em;
+  }
+
+}
