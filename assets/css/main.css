@@ -1,7 +1,4 @@
 html {
-  /*background-image:
-  linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-  linear-gradient(to right, #242526 0%, #fff 100%)*/
   background-color: #1b2229;
   color: white;
   font-size: 1em;
@@ -52,15 +49,10 @@ section {
   padding-top: 20px;
 }
 
-.fullpage {
-  height: 100vh;
-}
-
 .wrapper {
   margin: 0 auto;
   padding: 0 30px 0 30px;
 }
-
 
 .container {
   margin: 0 auto;
@@ -80,76 +72,6 @@ section {
 }
 
 
-/* Progress Bars */
-
-.skill {
-  width: 100%;
-  margin: auto;
-  margin-bottom: 23px;
-}
-
-
-.skill_img {
-  margin: auto;
-  width: 14%;
-  float: left;
-}
-
-.skill_description {
-  width: 86%;
-  float: left;
-}
-
-.progressbar {
-  width: 100%;
-  height: 0.5em;
-  background-color: blue;
-  position: relative;
-  border-radius: 5px;
-}
-
-.progress {
-  height: 8px;
-  width: 100%;
-  background-color: #3498db;
-  position: relative;
-  border-radius: 10px;
-}
-
-.percentCount {
-  float: right;
-  margin-top: 10px;
-  clear: both;
-  font-weight: bold;
-  font-family: Arial
-}
-
-.skill-set__bar {
-  width: 100%;
-  height: 1.4rem;
-  background: #fff;
-  position: relative;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
-  box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
-}
-
-.testing {
-  padding: 10px;
-  transition: .5s;
-  background-color: blue;
-}
-
-.testing.active {
-  background: red;
-  color: #fff;
-}
-
-.left-20 {
-  padding-left: 20px;
-}
-
-
 /* MOBILE: work area */
 
 @media all and (max-width: 600px) {
@@ -158,24 +80,8 @@ section {
     padding-top: 40px;
   }
 
-
   main {
     margin-bottom: 140px;
-  }
-
-  .work {
-    background-color: gray;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-
-  .work-medium {
-    display: none;
-  }
-
-  .your-class img {
-    background-color: black;
-    width: 100%;
   }
 
   .menu-item {
@@ -201,33 +107,11 @@ section {
     border-left: 2px solid #333333;
   }
 
-  .about-container {
-    display: block;
-  }
-
-  .about-item-text {
-    margin-bottom: 20px;
-  }
-
-  .small-6 {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .last {
-    margin-bottom: 150px;
-  }
-
   /* MOBILE: footer menu */
   .footer-container {
     padding: 0px;
     display: flex;
     justify-content: space-around;
-  }
-
-  .sticky {
-    position: fixed;
-    top: 0;
   }
 
   .sticky-foot {
@@ -243,6 +127,7 @@ section {
 /* ==============
     MOBILE: Menu
    ============== */
+
 nav ul {
   margin-top: 36px;
   padding: 0;
@@ -379,48 +264,6 @@ nav a:hover {
     display: none;
     padding: 20px 0px;
     background-color: black;
-  }
-
-  .work {
-    display: none;
-  }
-
-  .work-medium {
-    background-color: gray;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-
-  .your-class img {
-    background-color: black;
-    width: 100%;
-  }
-
-  .about-container {
-    display: flex;
-  }
-
-  .about-item-text {
-    width: 60%;
-    /*margin-right: 20px;*/
-  }
-
-  .about-item-img {
-    width: 40%;
-  }
-
-  .small-6 {
-    width: 50%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-
-  .column-left {
-    padding-right: 1em;
-  }
-
-  .column-right {
-    padding-left: 1em;
   }
 
 }
